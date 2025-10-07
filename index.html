@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+        <h1> ADIVINA EL NÚMERO </h1>
+        <h3 class="subtitle">Instrucciones </h3>
+        <p> Adivina un número entre 1 y 100.</p>
+        </header>
+        <section class="game"> 
+         <form id="guess-form" autocomplete="off">
+            <label for="guess-input">Tú Numero</label>
+            <input id="guess-input" type="number" min="1" max="100" required/>
+            <button id="guess-btn" type="submit">Adivinar</button>
+         </form>
+         
+         <div id="mesagge" aria-live="polite"></div>
+         <div class="controls">
+         <button id="reset-btn" type="button">Reiniciar
+         </button>         
+         </div>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

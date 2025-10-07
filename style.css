@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body { 
+   background: linear-gradient(180deg, #1a2a3a, #0d1722);
+  color: #e6e9ef;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ 
+.container {
+  background: rgba(42, 63, 84, 0.7);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  color: #429ce0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #8aa7c4;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #8aa7c4;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+
+form { 
+    display: flex; 
+    gap: .5rem; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 1rem;
+ }
+
+  input[type="number"] {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e6e9ef;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #4fb2ff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #4575b4;
+}
+
+button#adivinar {
+  background: linear-gradient(90deg, #2b9fff, #3cd5ff);
+  box-shadow: 0 3px 10px rgba(60, 213, 255, 0.25);
+}
+
+button#adivinar:hover {
+  background: linear-gradient(90deg, #3cd5ff, #2b9fff);
+  transform: scale(1.05);
+}
+
+button#reiniciar {
+  background: linear-gradient(90deg, #2a3b4d, #33485e);
+  color: #d1d8e0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+button#reiniciar:hover {
+  background: linear-gradient(90deg, #33485e, #2a3b4d);
+  transform: scale(1.05);
+}
+
+/* Mensajes */
+#message { 
+    min-height: 2rem; 
+    text-align: center; 
+    font-weight: 600; 
+    margin-top: .75rem;
+ }
+
+/* Botón reiniciar */
+.controls { 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 1rem;
+ }
