@@ -2,7 +2,7 @@ const form = document.getElementById('guess-form');
 const input = document.getElementById('guess-input');
 const messageEl = document.getElementById('message');
 const resetBtn = document.getElementById('reset-btn')
-
+const successSound = new Audio('success.mp3'); // Sonido para cuando adivina correctamente
 
 let secretNumber;
 let attempts;
@@ -48,6 +48,7 @@ attempts++;
 
 // comparar el numero ingresado con el numero secreto 
 if (guess === secretNumber){
+    successSound.play(); // Reproduce el sonido de éxito
     messageEl.textContent  = `🎉 ¡Felicidades! Adivinaste el número en ${attempts} intentos.`;
     input.disabled = true;
     form.querySelector('button').disabled = true;
@@ -56,9 +57,9 @@ if (guess === secretNumber){
 
 //si no acerto, dar una pista
 if (guess < secretNumber) {
-     messageEl.textContent ='🔺 El número secreto es mayor.';
+     messageEl.textContent =`🔺 El número secreto es mayor. Te quedan ${maxAttempts - attempts} intentos.`;
 } else {   
-     messageEl.textContent = '🔻 El número secreto es menor.';
+     messageEl.textContent = `🔻 El número secreto es menor.Te quedan ${maxAttempts - attempts} intentos.`;
 }
 
 //verificar si se agotaron los intentos
