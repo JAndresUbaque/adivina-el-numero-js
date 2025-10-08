@@ -79,23 +79,23 @@ button {
   color: #4575b4;
 }
 
-button#adivinar {
+button#guess-btn {
   background: linear-gradient(90deg, #2b9fff, #3cd5ff);
   box-shadow: 0 3px 10px rgba(60, 213, 255, 0.25);
 }
 
-button#adivinar:hover {
+button#guess-btn:hover {
   background: linear-gradient(90deg, #3cd5ff, #2b9fff);
   transform: scale(1.05);
 }
 
-button#reiniciar {
+button#reset-btn {
   background: linear-gradient(90deg, #2a3b4d, #33485e);
   color: #d1d8e0;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-button#reiniciar:hover {
+button#reset-btn:hover {
   background: linear-gradient(90deg, #33485e, #2a3b4d);
   transform: scale(1.05);
 }
